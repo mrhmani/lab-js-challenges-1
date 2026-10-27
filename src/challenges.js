@@ -31,7 +31,27 @@ console.log(howManyTimes(repeatedWords, "matter"));
 
 
 // Iteration 2 | Number Sequence
-function createSequence() {}
+function createSequence(n) { 
+
+  const numbers = [];
+  const myArray = [];
+  
+  for (let i = 0; i <= n; i++) {
+    numbers.push(i);
+  }
+  return numbers; 
+
+} 
+
+console.log(createSequence(7));  
+console.log(createSequence([])); 
+
+
+
+
+
+
+
 
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50];
