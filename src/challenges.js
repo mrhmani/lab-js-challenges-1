@@ -33,18 +33,22 @@ console.log(howManyTimes(repeatedWords, "matter"));
 // Iteration 2 | Number Sequence
 function createSequence(n) { 
 
-  const numbers = [];
-  const myArray = [];
+  const numbers = []; 
+
+  if (n === 0) {
+    return []; 
+  }
   
   for (let i = 0; i <= n; i++) {
     numbers.push(i);
-  }
-  return numbers; 
+  }  
+  return numbers;  
 
 } 
 
-console.log(createSequence(7));  
-console.log(createSequence([])); 
+console.log(createSequence(7));   
+console.log(createSequence(0));  
+
 
 
 
