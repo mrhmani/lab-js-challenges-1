@@ -56,11 +56,26 @@ console.log(createSequence(0));
 
 
 
-
 // Iteration 3 | Multiply for Each
-const numbers = [1, 2, 5, 10, 13, 50];
+const numbers = [1, 2, 5, 10, 13, 50]; 
 
-function multiplyBy() {}
+function multiplyBy(numbers, multiplier) {
+    const result = []; 
+
+    numbers.forEach(number => {
+      result.push(number * multiplier);
+    });
+
+    return result; 
+}
+
+multiplyBy(numbers, 3); 
+console.log(multiplyBy(numbers, 3)); 
+
+
+
+
+
 
 // Iteration 4 | Filter Out
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
