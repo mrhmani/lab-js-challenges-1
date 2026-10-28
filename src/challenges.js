@@ -55,7 +55,6 @@ console.log(createSequence(0));
 
 
 
-
 // Iteration 3 | Multiply for Each
 const numbers = [1, 2, 5, 10, 13, 50]; 
 
@@ -81,7 +80,18 @@ console.log(multiplyBy(numbers, 3));
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut() {}
+function filterOut(original, toRemove) { 
+
+
+   const result = original.filter((word) => !toRemove.includes(word)); 
+
+   return result; 
+  }
+
+  console.log(filterOut(original, toRemove)); 
+
+
+
 
 // Iteration 5 | Unique Arrays
 const duplicateWords = [
